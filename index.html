@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloud File Storage</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+</head>
+
+<body>
+    <h1>Cloud File Storage System</h1>
+
+    <div id="loginDiv">
+        <button id="loginBtn">Login with Google</button>
+    </div>
+
+    <!-- THIS ID MUST MATCH app.js -->
+    <div id="uploadDiv" style="display:none;">
+        <input type="file" id="fileInput">
+        <button id="uploadBtn">Upload File</button>
+        <div id="fileList"></div>
+         <h4>File Versions:</h4>
+    <div id="fileVersionList"></div>
+    </div>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+</body>
+</html>
